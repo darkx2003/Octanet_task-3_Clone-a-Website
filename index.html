@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawan's Crunchyroll clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="icon.jpeg">
+</head>
+
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="crunchyrol.png" alt="my site logo">
+        </div>
+        <div class="header-left">
+
+            <div class="browse-menu">
+                <div class="browse-menu-link menu-items">
+                    <a>BROWSE</a>
+                    <i class="ri-arrow-down-double-fill"></i>
+                </div>
+
+                <div class="menu-wrapper">
+                    <a class="menu-items">POPULAR</a>
+                    <a class="menu-items">NEW</a>
+                    <a class="menu-items">ALPHABETICAL</a>
+                </div>
+            </div>
+
+            <div class="nav-menu">
+                <a class="menu-items">MANGA</a>
+                <a class="menu-items">GAMES</a>
+                <div class="news-menu">
+                    <div class="news-menu-container menu-items">
+                        <a>NEWS</a>
+                        <i class="ri-arrow-down-double-fill"></i>
+                    </div>
+
+                    <div class="menu-wrapper">
+                        <a class="menu-items">POPULAR</a>
+                        <a class="menu-items">NEW</a>
+                        <a class="menu-items">ALPHABETICAL</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-right">
+
+            <button class="search-button">
+                <i class="ri-search-line"></i>
+            </button>
+            <button class="bookmark-button">
+                <i class="ri-bookmark-line"></i>
+            </button>
+            <button class="profile-button">
+                <i class="ri-user-3-fill"></i>
+            </button>
+        </div>
+    </header>
+
+
+    <div class="slide-container">
+        <div class="slider">
+            <div class="slider-content">
+                <div class="slide">
+                    <img src="image1.jpg" alt="NARUTO">
+                </div>
+                <div class="slide">
+                    <img src="image2.jpg" alt="BLEACH">
+                </div>
+                <div class="slide">
+                    <img src="image3.jpg" alt="ONE PIECE">
+                </div>
+            </div>
+        </div>
+        <div class="slider-buttons">
+            <button class="slider-button-p" onclick="previousSlide()">
+                <i class="ri-arrow-left-double-fill"></i>
+            </button>
+            <button class="slider-button-n" onclick="nextSlide()">
+                <i class="ri-arrow-right-double-fill"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="slider-dots">
+        <div class="slider-dot active">
+            NARUTO
+        </div>
+        <div class="slider-dot">
+            BLEACH
+        </div>
+        <div class="slider-dot">
+           ONE PIECE
+        </div>
+    </div>
+
+    <div class="short-container">
+        <div class="anime-container">
+            <img src="image1.jpg" alt="NARUTO">
+            <div class="details-container">
+                <div class="title">
+                    <h1>NARUTO : SHIPPUDEN</h1>
+                </div>
+                <a class="type">
+                    Series: Sub | Dub
+                </a>
+                <div class="description">
+                    <p>Moments prior to Naruto Uzumaki's birth, a huge demon known as the Kyuubi, the Nine-Tailed Fox, attacked Konohagakure,
+                         the Hidden Leaf Village, and wreaked havoc. In order to put an end to the Kyuubi's rampage, the leader of the village,
+                          the Fourth Hokage, sacrificed his life and sealed the monstrous beast inside the newborn Naruto :)
+
+                      </div>
+                <div class="player-container">
+                    <div class="play">
+                        <button><i class="ri-play-fill"></i>
+                            <h2>START WATCHING S1 EP1</h2>
+                        </button>
+                    </div>
+                    <div class="bookmark">
+                        <button><i class="ri-bookmark-line"></i>
+                            <h2>CLICK TO BOOKMARK</h2>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="anime-container">
+            <img src="image2.jpg" alt="BLEACH">
+            <div class="details-container">
+                <div class="title">
+                    <h1>BLEACH</h1>
+                </div>
+                <a class="type">
+                    Series: Sub | Dub
+                </a>
+                <div class="description">
+                    <p>Ichigo Kurosaki is an ordinary high schooler—until his family is attacked by a Hollow, a corrupt spirit that
+                         seeks to devour human souls. It is then that he meets a Soul Reaper named Rukia Kuchiki, who gets injured
+                          while protecting Ichigo's family from the assailant. To save his family, Ichigo accepts Rukia's offer of 
+                          taking her powers and becomes a Soul Reaper as a result :)
+
+                        </div>
+                <div class="player-container">
+                    <div class="play">
+                        <button><i class="ri-play-fill"></i>
+                            <h2>START WATCHING S1 EP1</h2>
+                        </button>
+                    </div>
+                    <div class="bookmark">
+                        <button><i class="ri-bookmark-line"></i>
+                            <h2>CLICK TO BOOKMARK</h2>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="anime-container">
+            <img src="image3.jpg" alt="ONE PIECE">
+            <div class="details-container">
+                <div class="title">
+                    <h1>ONE PIECE</h1>
+                </div>
+                <a class="type">
+                    Series: Sub | Dub
+                </a>
+                <div class="description">
+                    <p>Gol D. Roger was known as the "Pirate King," the strongest and most infamous being to have sailed the Grand Line. 
+                        The capture and execution of Roger by the World Government brought a change throughout the world. His last words before
+                         his death revealed the existence of the greatest treasure in the world, One Piece. It was this revelation that brought 
+                         about the Grand Age of Pirates, men who dreamed of finding One Piece—which promises an unlimited amount of riches and
+                          fame—and quite possibly the pinnacle of glory and the title of the Pirate King :)</p>
+                </div>
+                <div class="player-container">
+                    <div class="play">
+                        <button><i class="ri-play-fill"></i>
+                            <h2>START WATCHING S1 EP1</h2>
+                        </button>
+                    </div>
+                    <div class="bookmark">
+                        <button><i class="ri-bookmark-line"></i>
+                            <h2>CLICK TO BOOKMARK</h2>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="main-links">
+            <div class="navigation">
+                <h3>Navigation</h3>
+                <a href="my github repository">Browse Popular</a>
+                <a href="my github repository">Browse Simulcasts</a>
+                <a href="my github repository">Browse Manga</a>
+                <a href="my github repository">Browse Calender</a>
+                <a href="my github repository">News</a>
+                <a href="my github repository">Games</a>
+            </div>
+            <div class="connect-with-us">
+                <h3>Connect with Us</h3>
+                <a href="my github repository">Youtube</a>
+                <a href="my github repository">Facebook</a>
+                <a href="my github repository">Twitter</a>
+                <a href="my github repository">Instagram</a>
+                <a href="my github repository">TikTok</a>
+            </div>
+            <div class="crunchyroll">
+                <h3>Crunchyroll</h3>
+                <a href="my github repository">About</a>
+                <a href="my github repository">Help/FAQ</a>
+                <a href="my github repository">Terms of Use</a>
+                <a href="my github repository">Privacy Policy</a>
+                <a href="my github repository">AdChoices</a>
+                <a href="my github repository">Your Privacy Choices</a>
+                <a href="my github repository">Cookie Consent Tool</a>
+                <a href="my github repository">Press Inquiries</a>
+                <a href="my github repository">Get the Apps</a>
+                <a href="my github repository">Redeem Gift Card</a>
+                <a href="my github repository">Jobs</a>
+            </div>
+            <div class="account">
+                <h3>Account</h3>
+                <a href="my github repository">Create Account</a>
+                <a href="my github repository">Log In</a>
+            </div>
+        </div>
+        <div class="credit-bar">
+            <div class="credit">
+                <p>&copy Crunchyroll, LLC</p>
+            </div>
+            <div class="language-selector">
+                <div class="dropdown-content">
+                    <span onclick="selectLanguage('English(US)')">English(US)</span>
+                    <span onclick="selectLanguage('English(UK)')">English(UK)</span>
+                    <span onclick="selectLanguage('Hindi')">Hindi</span>
+                </div>
+                <button class="button" id="selectedLanguageBtn">English(US)</button>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
